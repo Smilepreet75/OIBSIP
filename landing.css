@@ -21,7 +21,7 @@ header nav{
 main{
     width: 100%;
     /* height: 630px; */
-    background-image: url('/landing-page/Snapchat-1362100350\ \(2\).jpg');
+    background-image: url('./landing-page/Snapchat-1362100350\ \(2\).jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
