@@ -1,0 +1,194 @@
+header img{
+    width: 80px;
+    height: 70px;
+    border-radius: 6px;
+}
+header nav{
+   
+    background-image: linear-gradient(to right,#ffb9e9,#f8d899,#2b9fd3);
+    
+}
+
+.clr{
+    background-color: rgb(248, 192, 243);
+}
+
+#signin:hover, #login:hover{
+ background-color: rgb(4 88 119);
+ color: white;
+ border-color: white;
+}
+main{
+    width: 100%;
+    /* height: 630px; */
+    background-image: url('/landing-page/Snapchat-1362100350\ \(2\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main i{
+    position: absolute;
+    padding-left: 32%;
+    margin-top: 10px;
+}
+
+/* main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+.loginpg{
+    color: black;
+     position: relative;
+     width: 410px;
+     height: 530px;
+     background-image: linear-gradient(to right,#ffb9e9,#f8d899,#2b9fd3);
+     border-radius: 8px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+}
+
+.loginpg::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 410px;
+    height: 530px;
+    background: linear-gradient(0deg, transparent,
+    transparent,#48d3e9,#48d3e9,#48d3e9 );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+
+}
+.loginpg::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 410px;
+    height: 530px;
+    background: linear-gradient(0deg, transparent,
+    transparent,#48d3e9,#48d3e9,#48d3e9 );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+   animation-delay: -3s;
+}
+
+.borderline{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.borderline::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 410px;
+    height: 500px;
+    background: linear-gradient(0deg, transparent,
+    transparent,#f3f6f6f8,#f3f6f6f8,#f3f6f6f8 );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.borderline::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 410px;
+    height: 500px;
+    background: linear-gradient(0deg, transparent,
+    transparent,#f3f6f6f8,#f3f6f6f8,#f3f6f6f8 );
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loginpg form{
+    position: absolute;
+    inset: 4px;
+    background-image: linear-gradient(to right,#ffb9e9,#f8d899,#2b9fd3);
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginpg form h2{
+    color: black;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.loginpg form .inputbox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+    
+}
+.loginpg form .inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 12px 10px 10px;
+    background: transparent;
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    box-shadow: none;
+    margin-top: 11px;
+}
+
+.loginpg form .links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginpg form .links a{
+    margin: 15px 0px;
+    font-size: 0.85em ;
+    color: black;
+    text-decoration: none;
+}
+
+.loginpg form .links a:hover,
+.loginpg form .links a:nth-child(3)
+{
+    color: #727373f8;
+}
+
+/* .loginpg form button[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background-color: white;
+    font-size: 0.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100px;
+    
+    color: #01133b;
+} */
+
